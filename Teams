@@ -1,0 +1,43 @@
+### Datalayer for the pageview ###
+
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'eec.impressionView',
+  ecommerce: {
+    impressions: [{
+      id: 'match_id_1',
+      name: 'Wales v Italy',
+      category: 'Six Nations',
+      list: 'Team Page',
+      brand: 'Wales',
+      position: 1
+    },{
+      id: 'match_id_2',
+      name: 'Ireland v Wales',
+      category: 'Six Nations',
+      list: 'Team Page',
+      brand: 'Ireland',
+      position: 2
+    }]
+  }
+})
+
+### Datalayer for the click on the match ###
+
+window.dataLayer.push({
+  event: 'eec.impressionClick',
+  ecommerce: {
+    click: {
+      actionField: {
+        list: 'Team Page',
+      },
+      products: [{
+        id: 'match_id_1',
+        name: 'Wales v Italy',
+        category: 'Six Nations',
+        brand: 'Wales',
+        position: 1
+      }]
+    }
+  }
+});
