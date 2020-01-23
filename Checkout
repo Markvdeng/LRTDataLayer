@@ -14,7 +14,7 @@ window.dataLayer.push({
         name: 'Wales v Italy',
         category: 'Six Nations',
         brand: 'Wales',
-        quantity: 2
+        quantity: 4
       }]
     }
   }
