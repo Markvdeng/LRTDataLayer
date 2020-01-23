@@ -1,0 +1,43 @@
+### Datalayer for the pageview ###
+
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'eec.impressionView',
+  ecommerce: {
+    impressions: [{
+      id: 'match_id_1',
+      name: 'France v England',
+      category: 'Six Nations',
+      list: 'City Page',
+      brand: 'England',
+      position: 1
+    },{
+      id: 'match_id_2',
+      name: 'France v Italy',
+      category: 'Six Nations',
+      list: 'Stadium Page',
+      brand: 'England',
+      position: 2
+    }]
+  }
+})
+
+### Datalayer for the click on the match ###
+
+window.dataLayer.push({
+  event: 'eec.impressionClick',
+  ecommerce: {
+    click: {
+      actionField: {
+        list: 'City Page',
+      },
+      products: [{
+        id: 'match_id_1',
+        name: 'France v England',
+        category: 'Six Nations',
+        brand: 'France',
+        position: 1
+      }]
+    }
+  }
+});
