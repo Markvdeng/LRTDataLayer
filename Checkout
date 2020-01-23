@@ -1,0 +1,21 @@
+### Datalayer for the checkout interaction ###
+
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'eec.checkout',
+  ecommerce: {
+    checkout: {
+      actionField: {
+        step: 1,
+        option: 'Collection Point'
+      },
+      products: [{
+        id: 'match_id_1',
+        name: 'Wales v Italy',
+        category: 'Six Nations',
+        brand: 'Wales',
+        quantity: 2
+      }]
+    }
+  }
+});
