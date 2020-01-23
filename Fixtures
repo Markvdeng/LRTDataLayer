@@ -1,0 +1,14 @@
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'eec.detail',
+  ecommerce: {
+    detail: {
+      products: [{
+        id: 'match_id_1',
+        name: 'Wales v Italy',
+        category: 'Six Nations',
+        brand: 'Wales'
+      }]
+    }
+  }
+});
