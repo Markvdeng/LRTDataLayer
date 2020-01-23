@@ -1,3 +1,5 @@
+### Datalayer for the pageview ###
+
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
   event: 'eec.impressionView',
@@ -5,20 +7,22 @@ window.dataLayer.push({
     impressions: [{
       id: 'match_id_1',
       name: 'Wales v Italy',
-      category: 'English Premier League',
+      category: 'Six Nations',
       list: 'Category Page',
-      brand: 'Liverpool',
+      brand: 'Wales',
       position: 1
     },{
       id: 'match_id_2',
-      name: 'Manchester United v Liverpool',
-      category: 'English Premier League',
+      name: 'France v England',
+      category: 'Six Nations',
       list: 'Category Page',
-      brand: 'Manchester United',
+      brand: 'France',
       position: 2
     }]
   }
 })
+
+### Datalayer for the click on the match ###
 
 window.dataLayer.push({
   event: 'eec.impressionClick',
@@ -29,9 +33,9 @@ window.dataLayer.push({
       },
       products: [{
         id: 'match_id_1',
-        name: 'Liverpool v Leicester City',
-        category: 'English Premier League',
-        brand: 'Liverpool',
+        name: 'Wales v Italy',
+        category: 'Six Nations',
+        brand: 'Wales',
         position: 1
       }]
     }
