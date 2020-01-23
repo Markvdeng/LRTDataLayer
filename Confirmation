@@ -1,0 +1,25 @@
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'eec.purchase',
+  ecommerce: {
+    currencyCode: 'GBP',
+    purchase: {
+      actionField: {
+        id: 'transaction_id', //So NO Match ID
+        affiliation: 'LRT',
+        revenue: '400.00',
+        tax: '90.00',
+        shipping: '10.00',
+        coupon: 'DISCOUNTCODE'
+      },
+      products: [{
+        id: 'match_id_1',
+        name: 'Wales v Italy',
+        category: 'Six Nations',
+        brand: 'Wales',
+        quantity: 4,
+        price: '75.00' //The price of one (1)! Item
+      }]
+    }
+  }
+});
