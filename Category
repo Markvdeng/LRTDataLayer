@@ -1,0 +1,39 @@
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'eec.impressionView',
+  ecommerce: {
+    impressions: [{
+      id: 'match_id_1',
+      name: 'Wales v Italy',
+      category: 'English Premier League',
+      list: 'Category Page',
+      brand: 'Liverpool',
+      position: 1
+    },{
+      id: 'match_id_2',
+      name: 'Manchester United v Liverpool',
+      category: 'English Premier League',
+      list: 'Category Page',
+      brand: 'Manchester United',
+      position: 2
+    }]
+  }
+})
+
+window.dataLayer.push({
+  event: 'eec.impressionClick',
+  ecommerce: {
+    click: {
+      actionField: {
+        list: 'Category Page'
+      },
+      products: [{
+        id: 'match_id_1',
+        name: 'Liverpool v Leicester City',
+        category: 'English Premier League',
+        brand: 'Liverpool',
+        position: 1
+      }]
+    }
+  }
+});
